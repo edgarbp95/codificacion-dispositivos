@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
+import logoCod from "./assets/codificacion.png"
 import './App.scss'
-import logoCod from "../../panel-app/src/assets/codificacion.png"
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -55,7 +55,7 @@ function App() {
   return (
     <>
    { loader && <div className='loader'>
-      <img className='logo-loader' src={logoCod} alt="" />
+      <img className='logo-loader' src={logoCod} alt="Logo" />
       <p className='by'>developed by <span>Edgar Buenaño</span></p>
     </div>}
     <div className='main-container'>
